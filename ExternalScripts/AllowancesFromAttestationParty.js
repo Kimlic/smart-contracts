@@ -5,7 +5,7 @@ const { getNetworkDeployedConfig, deployedConfigPathConsts } = require("../deplo
 const { getValueByPath } = require("../commonLogic/commonLogic");
 
 const rpName = "demoKimlic";
-const rpCoinbaseAddress = "0x64bead472383998573e22b191f20e0cd762fb809"; // RP coinbase address
+const rpCoinbaseAddress = "0x8a706fb2ffe2ebb9f6f192fbbf5929952039c556"; // RP coinbase address
 const rpKimTokens = 10000
 
 /**

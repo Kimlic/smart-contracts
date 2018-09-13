@@ -1,0 +1,28 @@
+# Logs
+logs
+*.log
+
+# Directories used by tools like mocha & istanbul
+coverage
+shippable
+
+# Dependency directory
+node_modules
+
+# Generated files
+config/development/contracts.json
+config/development/*.sol.js
+config/test/contracts.json
+bin
+dist
+
+# doxity
+doxity-tmp*
+docs/index.html
+
+build
+.jshintrc
+output.txt
+
+.idea
+# deployedConfig.json

@@ -11,7 +11,7 @@ const { saveDeployedConfig, getNetworkDeployedConfig, deployedConfigPathConsts }
 // Parameters
 
 const kimlicName = "kimlic"
-const kimlicCoinbaseAddress = "0x4b7f970b9bd6257b207f7a8fb08664ee217206b7"
+const kimlicCoinbaseAddress = "0x8de4bdeddddc58be3d5944cb05f63c8b492fecca"
 const kimlicPassword = "" // uuidv4() + "p@ssw0rd"
 const allowedKimlicTypes = ["email", "phone"]
 const apName = "veriff"

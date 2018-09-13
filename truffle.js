@@ -26,9 +26,9 @@ module.exports = {
       gas: 4694118
     },
     localMaster: {
-      from: "0x2d53b00ed1a56437b19adc4e6192c6d1b78f708c", // Master coinbase
-      host: "127.0.0.1", // Master IP
-      port: 22000,
+      from: "0x8de4bdeddddc58be3d5944cb05f63c8b492fecca", // master coinbase
+      host: "127.0.0.1", // master IP
+      port: 22000, // master port
       network_id: "10",
       gasPrice: 0,
       gas: 4694118
@@ -42,7 +42,7 @@ module.exports = {
     //   gas: 4694118
     // },
     localRp1: {
-      from: "0x64bead472383998573e22b191f20e0cd762fb809", // RP 1 coinbase
+      from: "0x82d9d2512673779e7926a4a1f3953c7da12344ef", // RP 1 coinbase
       host: "127.0.0.1", // RP 1 IP
       port: 22002,
       network_id: "10",
@@ -50,7 +50,7 @@ module.exports = {
       gas: 4694118
     },
     localRp2: {
-      from: "0x67f2a69bb32a444bfe93bc4a4c02f4e35aa93033", // RP 2 coinbase
+      from: "0xb8bfbdc4be748aa37b86ecbaadeee4cde8398d68", // RP 2 coinbase
       host: "127.0.0.1", // RP 2 IP
       port: 22003,
       network_id: "10",

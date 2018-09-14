@@ -8,7 +8,7 @@ const { setValueByPath, getValueByPath, combinePath } = require("../commonLogic/
 // Parameters
 
 const rpName = "demoKimlic"
-const rpAddress = "0x82d9d2512673779e7926a4a1f3953c7da12344ef" // RP coinbase address
+const rpAddress = "0x038976a669800c9fa6c24b5cef2503ac327c3dc3" // RP coinbase address
 const rpTokens = 10000
 
 /**

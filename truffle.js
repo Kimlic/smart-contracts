@@ -10,16 +10,16 @@ module.exports = {
   },
   networks: {
     stageMaster: {
-      from: "0x4b7f970b9bd6257b207f7a8fb08664ee217206b7", // Master coinbase
-      host: "51.141.115.175", // Master IP
+      from: "0x1adfcf314697db1f0561676cabd3a0517a63e954", // Master coinbase
+      host: "40.87.94.79", // Master IP
       port: 22000,
       network_id: "10",
       gasPrice: 0,
       gas: 4694118
     },
     stageDemoKimlic: {
-      from: "0x8a706fb2ffe2ebb9f6f192fbbf5929952039c556", // RP Demo Kimlic coinbase
-      host: "51.140.222.82", // RP Demo Kimlic IP
+      from: "0x7104d3f287274ff695893350c845633e4369126f", // RP Demo Kimlic coinbase
+      host: "40.117.78.52", // RP Demo Kimlic IP
       port: 22000,
       network_id: "10",
       gasPrice: 0,

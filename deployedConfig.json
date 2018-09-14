@@ -1,25 +1,25 @@
 {
     "10": {
-        "deployerAddress": "0xe5d723246c020659215ac3154966cb797c24cbaf",
-        "networkName": "localMaster",
+        "deployerAddress": "0x1adfcf314697db1f0561676cabd3a0517a63e954",
+        "networkName": "stageMaster",
         "deployedContracts": {
-            "kimlicContextStorageAddress": "0x878a8d7915eefb13a26e10962b4a0096f385bfe8",
-            "kimlicContractsContextAddress": "0xc631a529ac1ad5c8ca8f4037032b1763ace1a656",
-            "accountStorageAddress": "0x155efc53c62188d9713886bbbc3e3926d4ab1e6f",
-            "accountStorageAdapterAddress": "0xc59f5c1f72994adde77e5e8295633aa9226e3c2d",
-            "relyingPartyStorageAdapterAddress": "0xc5edc4a446062714c9d63760bf3665aca5140052",
-            "relyingPartyStorageAddress": "0x5c4c66d81128adc817638746a0ac45a5bdb3f800",
-            "attestationPartyStorageAdapterAddress": "0x38ec1be82e208962b7eeaa9f40e2b11da692ba43",
-            "attestationPartyStorageAddress": "0x586525b627c3b54fe4b9d54135f48a824bdb9ff5",
-            "verificationContractFactoryAddress": "0x3a5fbd41fccf1eaf6658fa84708db8161a9bb269",
-            "provisioningContractFactoryAddress": "0x5f9f75ffc66d0884d1dfdbe50f43748eb197b27a",
-            "kimlicTokenAddress": "0x52385126744fde1c78bfe2089098573f82b0d73e",
-            "rewardingContractAddress": "0xc359182c26678519e4067d531d16af8f88d931ce"
+            "kimlicContextStorageAddress": "0x1c5c5721000e2d5910ed4cbb17646bfa3b0c278c",
+            "kimlicContractsContextAddress": "0xcddf188569d38ff3c5fe7869058e41c072d85399",
+            "accountStorageAddress": "0xe6ab7c6bcfc57fde22a951deac469af98e89a42a",
+            "accountStorageAdapterAddress": "0xf4562387807ebb5c9ec3d2288e472e21662144f6",
+            "relyingPartyStorageAdapterAddress": "0x58873bd7d962cb11fca651b954afb0f72bfab928",
+            "relyingPartyStorageAddress": "0x5a2d91d2ddbb80100043b88d98c2fdd471514e8b",
+            "attestationPartyStorageAdapterAddress": "0xce36d05cd6ffab23201a9715088cb39cfeaf17e3",
+            "attestationPartyStorageAddress": "0xb1fb5a7cb1b3a5042371554288a487eddacacce2",
+            "verificationContractFactoryAddress": "0x5fe79be4b554ab90cbdf9d3e6e8deb38994e98a1",
+            "provisioningContractFactoryAddress": "0x916c32d9ced3d4b7dbb3ceffe9eac3be352e3fe6",
+            "kimlicTokenAddress": "0xdd90f89509ea1c1fc7ff95985c817b9a17f87e64",
+            "rewardingContractAddress": "0x0d909ce385878a8bda515b937e30445ab335eb55"
         },
         "accountStorageAdapter": {
             "owner": {
-                "accountAddress": "0x969675d3bdf6165ec7d36cb5407dbfe257bc6a6c",
-                "accountPassword": "cbf8c620-5539-4e1d-b720-796a0e6a3fba"
+                "accountAddress": "0x8ac47c376b2b0033ec8b085f50e1b124d1ac25c0",
+                "accountPassword": "69a36acb-aa1d-4897-8f71-57f452bfeae2"
             },
             "allowedFieldNames": [
                 "email",
@@ -34,12 +34,21 @@
             ]
         },
         "communityTokenWallet": {
-            "address": "0xe2dff1813aeb96a9f0857f55524c82a836f42dbd",
+            "address": "0xd8fddba8cd88403c469297230b629b6c42024ac2",
             "password": "p@ssw0rd"
         },
         "provisioningContractFactory": {
+            "phone": {
+                "intersets": {
+                    "communityTokenWallet": 0,
+                    "coOwner": 0,
+                    "kimlicWallet": 80,
+                    "account": 20
+                },
+                "tokensLockPeriod": 2
+            },
             "documents": {
-                "residence_permit_card": {
+                "passport": {
                     "intersets": {
                         "communityTokenWallet": 10,
                         "coOwner": 20,
@@ -57,7 +66,7 @@
                     },
                     "tokensLockPeriod": 30
                 },
-                "passport": {
+                "driver_license": {
                     "intersets": {
                         "communityTokenWallet": 10,
                         "coOwner": 20,
@@ -66,7 +75,7 @@
                     },
                     "tokensLockPeriod": 30
                 },
-                "driver_license": {
+                "residence_permit_card": {
                     "intersets": {
                         "communityTokenWallet": 10,
                         "coOwner": 20,
@@ -84,15 +93,6 @@
                     "account": 20
                 },
                 "tokensLockPeriod": 5
-            },
-            "phone": {
-                "intersets": {
-                    "communityTokenWallet": 0,
-                    "coOwner": 0,
-                    "kimlicWallet": 80,
-                    "account": 20
-                },
-                "tokensLockPeriod": 2
             },
             "addresses": {
                 "billing": {
@@ -117,34 +117,34 @@
         },
         "provisioningPriceListConfig": {
             "prices": {
-                "phone": 1000000000000000000,
-                "addresses.living": 1500000000000000000,
-                "documents.driver_license": 2000000000000000000,
-                "device": null,
-                "documents.residence_permit_card": 2000000000000000000,
-                "documents.id_card": 2000000000000000000,
                 "email": 500000000000000000,
+                "addresses.billing": 1500000000000000000,
+                "addresses.living": 1500000000000000000,
+                "device": null,
+                "documents.id_card": 2000000000000000000,
+                "documents.residence_permit_card": 2000000000000000000,
                 "documents.passport": 2000000000000000000,
-                "addresses.billing": 1500000000000000000
+                "phone": 1000000000000000000,
+                "documents.driver_license": 2000000000000000000
             }
         },
         "verificationPriceListConfig": {
             "prices": {
-                "documents.driver_license": 2000000000000000000,
-                "addresses.billing": 1500000000000000000,
-                "documents.residence_permit_card": 2000000000000000000,
                 "documents.id_card": 2000000000000000000,
-                "device": null,
-                "phone": 1000000000000000000,
                 "email": 500000000000000000,
-                "addresses.living": 1500000000000000000,
-                "documents.passport": 2000000000000000000
+                "phone": 1000000000000000000,
+                "documents.residence_permit_card": 2000000000000000000,
+                "documents.driver_license": 2000000000000000000,
+                "documents.passport": 2000000000000000000,
+                "addresses.billing": 1500000000000000000,
+                "device": null,
+                "addresses.living": 1500000000000000000
             }
         },
         "partiesConfig": {
             "createdParties": {
                 "veriff": {
-                    "address": "0x64dcb6f92d1b3b63e41a2d309e7aab4c1dcbaa38",
+                    "address": "0x4aabc1c45ff64c562209d2207617f632184649a1",
                     "password": "",
                     "allowedFieldNames": [
                         "documents.id_card",
@@ -154,7 +154,7 @@
                     ]
                 },
                 "kimlic": {
-                    "address": "0xe5d723246c020659215ac3154966cb797c24cbaf",
+                    "address": "0x1adfcf314697db1f0561676cabd3a0517a63e954",
                     "password": "",
                     "allowedFieldNames": [
                         "email",
@@ -162,7 +162,7 @@
                     ]
                 },
                 "demoKimlic": {
-                    "address": "0x038976a669800c9fa6c24b5cef2503ac327c3dc3"
+                    "address": "0x7104d3f287274ff695893350c845633e4369126f"
                 }
             }
         },
@@ -179,7 +179,7 @@
             ]
         },
         "kimlicWallet": {
-            "address": "0x73b19fd3542aeddba441ed07d4525cb7c661b95d",
+            "address": "0x8f5d9c7d369637248668e7ac750266d3d4f146af",
             "password": "kimlicWalletp@ssw0rd"
         },
         "verificationContractFactory": {

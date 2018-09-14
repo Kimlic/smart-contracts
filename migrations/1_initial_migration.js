@@ -16,4 +16,5 @@ const transactionKicker = () => {
 module.exports = function (deployer) {
   transactionKicker()
   deployer.deploy(Migrations)
+  transactionKicker()
 }

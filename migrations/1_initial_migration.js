@@ -1,10 +1,5 @@
 var Migrations = artifacts.require("./Migrations.sol")
 
-/**
- * 
- * Deployment of initial contract which tracks deployment of other contracts
- */
-
 const transactionKicker = () => {
   web3.eth.sendTransaction({
       from: web3.eth.coinbase,

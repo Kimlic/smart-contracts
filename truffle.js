@@ -1,12 +1,23 @@
 module.exports = {
-  solc: {
-    optimizer: {
-      enabled: true,
-      runs: 200
+  compilers: {
+    solc: {
+      version: "0.5.1",
+      settings: {
+        optimizer: {
+          enabled: true,
+          runs: 200
+        },
+        evmVersion: "byzantium"
+      }
     }
   },
   mocha: {
-    useColors: true
+    useColors: true,
+    reporter: 'eth-gas-reporter',
+    reporterOptions : {
+      currency: 'USD',
+      gasPrice: 1
+    }
   },
   networks: {
     stageMaster: {
@@ -28,10 +39,15 @@ module.exports = {
     localMaster: {
       from: "0xe5d723246c020659215ac3154966cb797c24cbaf", // master coinbase
       host: "127.0.0.1", // master IP
-      port: 22000, // master port
+      port: 22001, // master port
       network_id: "10",
       gasPrice: 0,
-      gas: 4694118
+      gas: 4694118,
+      confirmations: 0,
+      timeoutBlocks: 200, 
+      websockets: false,
+      production: false,
+      skipDryRun: false
     },
     localRp1: {
       from: "0x038976a669800c9fa6c24b5cef2503ac327c3dc3", // RP 1 coinbase
@@ -39,7 +55,12 @@ module.exports = {
       port: 22002,
       network_id: "10",
       gasPrice: 0,
-      gas: 4694118
+      gas: 4694118,
+      confirmations: 0,
+      timeoutBlocks: 200, 
+      websockets: false,
+      production: false,
+      skipDryRun: false
     },
     localRp2: {
       from: "0x80580b353d217c80fac9075331625172a8b4b8e2", // RP 2 coinbase
@@ -47,7 +68,12 @@ module.exports = {
       port: 22003,
       network_id: "10",
       gasPrice: 0,
-      gas: 4694118
+      gas: 4694118,
+      confirmations: 0,
+      timeoutBlocks: 200, 
+      websockets: false,
+      production: false,
+      skipDryRun: false
     },
     testRpc: {
       host: "127.0.0.1",

@@ -1,16 +1,20 @@
 {
-  "extends": "solium:recommended",
-  "plugins": [
-    "security"
-  ],
+  "extends": "solium:all",
+  "plugins": ["security"],
   "rules": {
-    "quotes": [
-      "error",
-      "double"
-    ],
-    "indentation": [
-      "error",
-      4
-    ]
+    "arg-overflow": ["warning", 3],
+    "avoid-suicide": "error",
+    "avoid-sha3": "warn",
+    "blank-lines": ["off", 2],
+    "imports-on-top": 1,
+    "indentation": ["error", 2],
+    "lbrace": 0,
+    "operator-whitespace": 0,
+    "quotes": ["error", "double"],
+    "variable-declarations": 1,
+    "security/no-assign-params": ["warning"],
+    "security/no-block-members": ["warning"],
+    "security/no-call-value": ["warning"],
+    "security/no-inline-assembly": ["warning"]
   }
 }

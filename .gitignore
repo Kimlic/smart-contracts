@@ -2,12 +2,17 @@
 logs
 *.log
 
+# Temp
+temp
+artifacts/*
+
 # Directories used by tools like mocha & istanbul
 coverage
 shippable
 
 # Dependency directory
 node_modules
+.node*
 
 # Generated files
 config/development/contracts.json
@@ -21,8 +26,9 @@ doxity-tmp*
 docs/index.html
 
 build
+flats
 .jshintrc
 output.txt
 
-.idea
-# deployedConfig.json
+.vscode
+.DS_Store

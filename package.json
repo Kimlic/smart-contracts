@@ -2,31 +2,55 @@
   "name": "quorum.smart-contracts",
   "version": "1.0.0",
   "description": "Kimlic smart contracts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kimlic/quorum.smart-contracts.git"
+  },
+  "author": "Dmytro Nasyrov, dmytro@pharosproduction.com",
+  "license": "Kimlic",
+  "bugs": {
+    "url": "https://github.com/Kimlic/quorum.smart-contracts/issues"
+  },
+  "homepage": "https://github.com/Kimlic/quorum.smart-contracts#readme",
   "main": "truffle.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "truffle test",
-    "test:ganache": "truffle test --network ganache",
-    "lint": "solium -d contracts/"
+    "analyze": "scripts/node/analyze.sh",
+    "compile": "scripts/node/compile.sh",
+    "coverage": "scripts/coverage.sh",
+    "docs": "node_modules/.bin/solidity-docgen . contracts .",
+    "flatten": "scripts/node/flatten.sh",
+    "lint": "scripts/node/lint.sh",
+    "test": "scripts/node/test.sh",
+    "migrate:dev": "scripts/node/migrate-dev.sh",
+    "migrate:prod": "scripts/node/migrate-prod.sh",
+    "truffle:version": "truffle version",
+    "ganache": "kill -9 $(lsof -i :7545 -S -t) && ganache-cli -u 0 --gasPrice 0 -p 7545"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kimlic/quorum.smart-contracts.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Kimlic/quorum.smart-contracts/issues"
-  },
-  "homepage": "https://github.com/Kimlic/quorum.smart-contracts#readme",
   "devDependencies": {
-    "ganache-cli": "^6.1.8",
-    "solium": "^1.1.8",
-    "truffle": "^4.1.14"
+    "bn.js": "^4.11.8",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eth-gas-reporter": "^0.1.12",
+    "ethereumjs-abi": "^0.6.5",
+    "ethereumjs-testrpc": "^6.0.3",
+    "ethereumjs-util": "^6.0.0",
+    "ganache-cli": "^6.2.5",
+    "rimraf": "^2.6.2",
+    "solidity-coverage": "^0.5.11",
+    "solidity-docgen": "^0.1.0",
+    "solidity-static-analysis": "^1.1.0",
+    "solium": "^1.2.0",
+    "standard": "^12.0.1",
+    "truffle-flattener": "^1.2.10",
+    "web3": "github:PharosProduction/web3.js#1.0"
   },
-  "dependencies": {
-    "truffle-core": "^4.1.14"
-  }
+  "dependencies": {}
 }
